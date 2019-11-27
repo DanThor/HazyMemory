@@ -1,0 +1,34 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background: #white;
+}
+
+h1 {
+    color: #f52a3b
+}
+.memoryBoard {
+    border: 1px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+}
+img {
+    width: 160px;
+    height: 160px;
+}
+
+.memoryCard {
+    border: 1px solid #f52a3b;
+    position: relative;
+    width: 25%;
+    height: 25%;
+}
+.frontFace, .backFace {
+    position: absolute;
+    border: 1px solid black;
+}
