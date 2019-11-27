@@ -2,7 +2,7 @@
   "short_name": "Hazy Memory",
   "name": "Hazy Memory",
   "icons": [{
-    "src": "icon.png",
+    "src": "images/yrgo.png",
     "type": "image/png",
     "sizes": "192x192"
   }],

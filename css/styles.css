@@ -4,31 +4,54 @@
 
 body {
     height: 100vh;
-    background: #white;
+    background: #fdfdfd;
+    display: flex;
 }
 
 h1 {
-    color: #f52a3b
+    color: #f52a3b;
 }
+
 .memoryBoard {
-    border: 1px solid grey;
     display: flex;
     flex-wrap: wrap;
     width: 640px;
     height: 640px;
+    margin: auto;
+    perspective: 1000px;
 }
+
 img {
-    width: 160px;
-    height: 160px;
+    width: 100%;
 }
 
 .memoryCard {
-    border: 1px solid #f52a3b;
     position: relative;
-    width: 25%;
-    height: 25%;
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 0px 0px 1px 1px #f3f3f3;
 }
-.frontFace, .backFace {
+
+.memoryCard:active {
+    transform: scale(.97);
+    transform: transform .2s;
+}
+
+.memoryCard.flip {
+    transform: rotateY(180deg);
+}
+
+.frontFace,
+.backFace {
     position: absolute;
-    border: 1px solid black;
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+.frontFace {
+    transform: rotateY(180deg);
 }
