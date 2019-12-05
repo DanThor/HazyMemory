@@ -1,15 +1,16 @@
 * {
-    font-size: 16px;
+    font-family: monospace;
 }
 
 body {
     height: 100vh;
     background: #fdfdfd;
-    display: flex;
 }
 
 h1 {
-    color: #f52a3b;
+    /* color: #f52a3b; */
+    color: #000;
+    text-align: center;
 }
 
 .memoryBoard {
@@ -32,13 +33,13 @@ img {
     margin: 5px;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform .5s;
+    transition: transform 0.5s;
     box-shadow: 0px 0px 1px 1px #f3f3f3;
 }
 
 .memoryCard:active {
-    transform: scale(.97);
-    transform: transform .2s;
+    transform: scale(0.97);
+    transform: transform 0.2s;
 }
 
 .memoryCard.flip {
@@ -54,4 +55,10 @@ img {
 
 .frontFace {
     transform: rotateY(180deg);
+}
+button {
+    margin: 20px auto;
+    display: block;
+    padding: 20px;
+    font-size: 22px;
 }
