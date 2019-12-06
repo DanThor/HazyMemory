@@ -16,8 +16,8 @@ h1 {
 .memoryBoard {
     display: flex;
     flex-wrap: wrap;
-    width: 640px;
-    height: 640px;
+    width: 375px;
+    height: 375px;
     margin: auto;
     perspective: 1000px;
 }
@@ -55,7 +55,13 @@ img {
 
 .frontFace {
     transform: rotateY(180deg);
+    -webkit-transform: translateZ(1px);
 }
+
+.backFace {
+    -webkit-transform: translateZ(2px);
+}
+
 button {
     margin: 20px auto;
     display: block;
