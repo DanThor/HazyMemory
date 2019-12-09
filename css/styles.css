@@ -54,12 +54,12 @@ img {
 }
 
 .frontFace {
-    transform: rotateY(180deg);
     -webkit-transform: translateZ(1px);
+    transform: rotateY(180deg);
 }
 
 .backFace {
-    -webkit-transform: translateZ(2px);
+    -webkit-transform: translateZ(1px);
 }
 
 button {
