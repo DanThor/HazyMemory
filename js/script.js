@@ -111,10 +111,17 @@ cards.forEach(card => card.addEventListener("click", flipCard));
 const resetButton = document.querySelector("button");
 
 function resetGame() {
-    cards.forEach(card => {
-        card.classList.remove("flip");
+    memoryBoard.innerHTML = "";
+    cardsData.forEach(card => {
+        const image = createCard(card.image, card.type);
+        memoryBoard.appendChild(stringToHTML(image));
     });
-    setTimeout(5000);
-    shuffle();
+    const cards = document.querySelectorAll(".memoryCard");
+    cards.forEach(card => card.addEventListener("click", flipCard));
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 16);
+        card.style.order = randomPos;
+    });
 }
+
 resetButton.addEventListener("click", resetGame);
