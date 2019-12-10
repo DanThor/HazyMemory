@@ -22,12 +22,15 @@ Clone down the project to you computer:
 ## Testers
 
 Victor Puke<br>
-Marc Dela Cruz<br>
+Mark Dela Cruz<br>
 Erik Johannesson
-
-## Code review
-
-Marc Dela Cruz
 
 ## License
 Licensed under the MIT-license
+
+## Code review - Mark Dela Cruz
+* Good indentation
+* Nice that it is work on mobile
+* Nice that it works on Safari
+* Maybe you should look into making the board bigger on desktop devices
+* Easy code to read and follow
